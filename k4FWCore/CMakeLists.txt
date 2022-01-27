@@ -9,7 +9,6 @@ gaudi_install(SCRIPTS)
 
 gaudi_add_library(k4FWCore
 		  SOURCES src/PodioDataSvc.cpp
-              src/KeepDropSwitch.cpp
                   LINK Gaudi::GaudiAlgLib Gaudi::GaudiKernel podio::podioRootIO ROOT::Core ROOT::RIO ROOT::Tree
                   )
 target_include_directories(k4FWCore PUBLIC
